@@ -9,3 +9,4 @@ C:\Users\nishi\Documents\project\Validations\obj\Debug\net8.0\ProductManagement.
 C:\Users\nishi\Documents\project\Validations\obj\Debug\net8.0\refint\ProductManagement.Validations.dll
 C:\Users\nishi\Documents\project\Validations\obj\Debug\net8.0\ProductManagement.Validations.pdb
 C:\Users\nishi\Documents\project\Validations\obj\Debug\net8.0\ref\ProductManagement.Validations.dll
+C:\Users\nishi\Documents\project\Validations\obj\Debug\net8.0\ProductManagement.Validations.sourcelink.json

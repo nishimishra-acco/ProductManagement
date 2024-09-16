@@ -36,3 +36,4 @@ C:\Users\nishi\Documents\project\src\ProductManagement.API\obj\Debug\net8.0\Prod
 C:\Users\nishi\Documents\project\src\ProductManagement.API\obj\Debug\net8.0\ref\ProductManagement.API.dll
 C:\Users\nishi\Documents\project\src\ProductManagement.API\bin\Debug\net8.0\ProductManagement.Validations.dll
 C:\Users\nishi\Documents\project\src\ProductManagement.API\bin\Debug\net8.0\ProductManagement.Validations.pdb
+C:\Users\nishi\Documents\project\src\ProductManagement.API\obj\Debug\net8.0\ProductManagement.API.sourcelink.json

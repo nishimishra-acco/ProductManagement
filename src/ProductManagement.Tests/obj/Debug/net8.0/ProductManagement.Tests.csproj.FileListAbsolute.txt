@@ -117,3 +117,4 @@ C:\Users\nishi\Documents\project\src\ProductManagement.Tests\bin\Debug\net8.0\Sw
 C:\Users\nishi\Documents\project\src\ProductManagement.Tests\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\nishi\Documents\project\src\ProductManagement.Tests\bin\Debug\net8.0\ProductManagement.API.dll
 C:\Users\nishi\Documents\project\src\ProductManagement.Tests\bin\Debug\net8.0\ProductManagement.API.pdb
+C:\Users\nishi\Documents\project\src\ProductManagement.Tests\obj\Debug\net8.0\ProductManagement.Tests.sourcelink.json

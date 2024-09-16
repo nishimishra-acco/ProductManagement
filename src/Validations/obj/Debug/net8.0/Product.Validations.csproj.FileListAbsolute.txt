@@ -1,0 +1,11 @@
+C:\Users\nishi\Documents\project\Validations\bin\Debug\net8.0\Product.Validations.deps.json
+C:\Users\nishi\Documents\project\Validations\bin\Debug\net8.0\Product.Validations.dll
+C:\Users\nishi\Documents\project\Validations\bin\Debug\net8.0\Product.Validations.pdb
+C:\Users\nishi\Documents\project\Validations\obj\Debug\net8.0\Product.Validations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nishi\Documents\project\Validations\obj\Debug\net8.0\Product.Validations.AssemblyInfoInputs.cache
+C:\Users\nishi\Documents\project\Validations\obj\Debug\net8.0\Product.Validations.AssemblyInfo.cs
+C:\Users\nishi\Documents\project\Validations\obj\Debug\net8.0\Product.Validations.csproj.CoreCompileInputs.cache
+C:\Users\nishi\Documents\project\Validations\obj\Debug\net8.0\Product.Validations.dll
+C:\Users\nishi\Documents\project\Validations\obj\Debug\net8.0\refint\Product.Validations.dll
+C:\Users\nishi\Documents\project\Validations\obj\Debug\net8.0\Product.Validations.pdb
+C:\Users\nishi\Documents\project\Validations\obj\Debug\net8.0\ref\Product.Validations.dll
