@@ -1,0 +1,17 @@
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\bin\Debug\net8.0\ProductManagement.Services.deps.json
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\bin\Debug\net8.0\ProductManagement.Services.dll
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\bin\Debug\net8.0\ProductManagement.Services.pdb
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\bin\Debug\net8.0\ProductManagement.Data.dll
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\bin\Debug\net8.0\ProductManagement.Data.pdb
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\obj\Debug\net8.0\ProductManagement.Services.csproj.AssemblyReference.cache
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\obj\Debug\net8.0\ProductManagement.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\obj\Debug\net8.0\ProductManagement.Services.AssemblyInfoInputs.cache
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\obj\Debug\net8.0\ProductManagement.Services.AssemblyInfo.cs
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\obj\Debug\net8.0\ProductManagement.Services.csproj.CoreCompileInputs.cache
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\obj\Debug\net8.0\ProductM.9B44A000.Up2Date
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\obj\Debug\net8.0\ProductManagement.Services.dll
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\obj\Debug\net8.0\refint\ProductManagement.Services.dll
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\obj\Debug\net8.0\ProductManagement.Services.pdb
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\obj\Debug\net8.0\ref\ProductManagement.Services.dll
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\bin\Debug\net8.0\ProductManagement.Validations.dll
+C:\Users\nishi\Documents\project\src\ProductManagement.Services\bin\Debug\net8.0\ProductManagement.Validations.pdb

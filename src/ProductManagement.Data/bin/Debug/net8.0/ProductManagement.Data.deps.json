@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ProductManagement.Data/1.0.0": {
+        "dependencies": {
+          "ProductManagement.Validations": "1.0.0"
+        },
+        "runtime": {
+          "ProductManagement.Data.dll": {}
+        }
+      },
+      "ProductManagement.Validations/1.0.0": {
+        "runtime": {
+          "ProductManagement.Validations.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProductManagement.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProductManagement.Validations/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
