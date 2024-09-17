@@ -78,9 +78,6 @@ namespace ProductManagement.Tests.Repository
 
             var updatedProduct = originalProduct;
             updatedProduct.Name = "CPU";
-
-            //var updatedProduct = Product.ProductRecordList[3];
-
             // Act
             await _mockRepository.Update(updatedProduct);
 
