@@ -2,9 +2,9 @@
 
 namespace ProductManagement.Data.Models.Validators
 {
-    public interface IValidateProduct
-    {
-        void Check(ProductDto product);
+    public interface IValidateProduct 
+    { 
+       void Check(ProductDto product);
     }
 
 }
