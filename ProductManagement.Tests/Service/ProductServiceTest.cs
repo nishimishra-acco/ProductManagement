@@ -38,6 +38,19 @@ namespace ProductManagement.Tests.Service
             Assert.NotEmpty(result);
             Assert.Equal(4, result.Count());
         }
+        [Fact]
+        public async Task GetAllProducts_ShouldNotReturnProducts()
+        {
+            // Arrange
+
+            _mockProductRepository.Setup(repo => repo.GetAll()).ReturnsAsync([]);
+
+            // Act
+            var result = await _productService.GetAllProducts();
+
+            //Assert
+            Assert.Empty(result);
+        }
 
         [Fact]
         public async Task GetProductById_ShouldReturnProduct()
