@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "838/7yuKdYw=",
+  "dgSpecHash": "3h+KwixqHTk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Tests\\ProductManagement.Tests.csproj",
+  "projectFilePath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Tests\\ProductManagement.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nishi\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\nishi\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

@@ -6,36 +6,34 @@ namespace ProductManagement.Tests
     public class ProductRepositoryTest
     {
         private readonly ProductRepository _mockRepository;
-        private readonly Product product;
-        private readonly ProductRecord record;
 
         public ProductRepositoryTest()
         {
             _mockRepository = new ProductRepository();
-            product = new Product();
-            record = product.ProductRecordList()[0];
         }
 
         [Fact]
         public async Task GetAll_ShouldReturnAllProducts()
         {
             // Arrange
-            var product1 = product.ProductRecordList()[0];
-            var product2 = product.ProductRecordList()[0]; ;
-            await _mockRepository.Create(product1);
-            await _mockRepository.Create(product2);
+            var firstProduct = Product.ProductRecordList[0];
+            var secondProduct = Product.ProductRecordList[1];
+
+            await _mockRepository.Create(firstProduct);
+            await _mockRepository.Create(secondProduct);
 
             // Act
             var products = await _mockRepository.GetAll();
 
             // Assert
-            Assert.Contains(product1, products);
-            Assert.Contains(product2, products);
+            Assert.Contains(firstProduct, products);
+            Assert.Contains(secondProduct, products);
         }
 
         [Fact]
         public async Task GetById_ShouldReturnProduct_WhenProductExists()
         {
+            var record = Product.ProductRecordList[0];
             // Arrange
             await _mockRepository.Create(record);
 
@@ -57,7 +55,8 @@ namespace ProductManagement.Tests
 
         [Fact]
         public async Task Create_ShouldAddProductToRepository()
-        { 
+        {
+            var record = Product.ProductRecordList[0];
             // Act
             var result = await _mockRepository.Create(record);
 
@@ -73,10 +72,13 @@ namespace ProductManagement.Tests
         public async Task Update_ShouldModifyProduct_WhenProductExists()
         {
             // Arrange
-            var originalProduct = new ProductRecord { Id = Guid.NewGuid(), Name = "OriginalProduct" };
+            var originalProduct = Product.ProductRecordList[0];
             await _mockRepository.Create(originalProduct);
 
-            var updatedProduct = new ProductRecord { Id = originalProduct.Id, Name = "UpdatedProduct" };
+            var updatedProduct = originalProduct;
+            updatedProduct.Name = "CPU";
+
+            //var updatedProduct = Product.ProductRecordList[3];
 
             // Act
             await _mockRepository.Update(updatedProduct);
@@ -90,7 +92,7 @@ namespace ProductManagement.Tests
         public async Task Update_ShouldThrowException_WhenProductDoesNotExist()
         {
             // Arrange
-            var product = new ProductRecord { Id = Guid.NewGuid(), Name = "NonExistentProduct" };
+            var product = Product.ProductRecordList[2];
 
             // Act & Assert
             await Assert.ThrowsAsync<InvalidOperationException>(() => _mockRepository.Update(product));

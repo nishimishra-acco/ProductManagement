@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Tests\\ProductManagement.Tests.csproj": {}
+    "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Tests\\ProductManagement.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.API\\ProductManagement.API.csproj": {
+    "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.API\\ProductManagement.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.API\\ProductManagement.API.csproj",
+        "projectUniqueName": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.API\\ProductManagement.API.csproj",
         "projectName": "ProductManagement.API",
-        "projectPath": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.API\\ProductManagement.API.csproj",
+        "projectPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.API\\ProductManagement.API.csproj",
         "packagesPath": "C:\\Users\\nishi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.API\\obj\\",
+        "outputPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,11 +34,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Data\\ProductManagement.Data.csproj": {
-                "projectPath": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Data\\ProductManagement.Data.csproj"
+              "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Data\\ProductManagement.Data.csproj": {
+                "projectPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Data\\ProductManagement.Data.csproj"
               },
-              "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Services\\ProductManagement.Services.csproj": {
-                "projectPath": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Services\\ProductManagement.Services.csproj"
+              "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Services\\ProductManagement.Services.csproj": {
+                "projectPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Services\\ProductManagement.Services.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Data\\ProductManagement.Data.csproj": {
+    "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Data\\ProductManagement.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Data\\ProductManagement.Data.csproj",
+        "projectUniqueName": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Data\\ProductManagement.Data.csproj",
         "projectName": "ProductManagement.Data",
-        "projectPath": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Data\\ProductManagement.Data.csproj",
+        "projectPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Data\\ProductManagement.Data.csproj",
         "packagesPath": "C:\\Users\\nishi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Data\\obj\\",
+        "outputPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -116,8 +116,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nishi\\Documents\\project\\Validations\\ProductManagement.Validations.csproj": {
-                "projectPath": "C:\\Users\\nishi\\Documents\\project\\Validations\\ProductManagement.Validations.csproj"
+              "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\Validations\\ProductManagement.Validations.csproj": {
+                "projectPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\Validations\\ProductManagement.Validations.csproj"
               }
             }
           }
@@ -156,14 +156,14 @@
         }
       }
     },
-    "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Services\\ProductManagement.Services.csproj": {
+    "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Services\\ProductManagement.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Services\\ProductManagement.Services.csproj",
+        "projectUniqueName": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Services\\ProductManagement.Services.csproj",
         "projectName": "ProductManagement.Services",
-        "projectPath": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Services\\ProductManagement.Services.csproj",
+        "projectPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Services\\ProductManagement.Services.csproj",
         "packagesPath": "C:\\Users\\nishi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Services\\obj\\",
+        "outputPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -186,8 +186,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Data\\ProductManagement.Data.csproj": {
-                "projectPath": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Data\\ProductManagement.Data.csproj"
+              "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Data\\ProductManagement.Data.csproj": {
+                "projectPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Data\\ProductManagement.Data.csproj"
               }
             }
           }
@@ -226,14 +226,14 @@
         }
       }
     },
-    "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Tests\\ProductManagement.Tests.csproj": {
+    "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Tests\\ProductManagement.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Tests\\ProductManagement.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Tests\\ProductManagement.Tests.csproj",
         "projectName": "ProductManagement.Tests",
-        "projectPath": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Tests\\ProductManagement.Tests.csproj",
+        "projectPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Tests\\ProductManagement.Tests.csproj",
         "packagesPath": "C:\\Users\\nishi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Tests\\obj\\",
+        "outputPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -256,14 +256,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.API\\ProductManagement.API.csproj": {
-                "projectPath": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.API\\ProductManagement.API.csproj"
+              "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.API\\ProductManagement.API.csproj": {
+                "projectPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.API\\ProductManagement.API.csproj"
               },
-              "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Data\\ProductManagement.Data.csproj": {
-                "projectPath": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Data\\ProductManagement.Data.csproj"
+              "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Data\\ProductManagement.Data.csproj": {
+                "projectPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Data\\ProductManagement.Data.csproj"
               },
-              "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Services\\ProductManagement.Services.csproj": {
-                "projectPath": "C:\\Users\\nishi\\Documents\\project\\src\\ProductManagement.Services\\ProductManagement.Services.csproj"
+              "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Services\\ProductManagement.Services.csproj": {
+                "projectPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\src\\ProductManagement.Services\\ProductManagement.Services.csproj"
               }
             }
           }
@@ -324,14 +324,14 @@
         }
       }
     },
-    "C:\\Users\\nishi\\Documents\\project\\Validations\\ProductManagement.Validations.csproj": {
+    "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\Validations\\ProductManagement.Validations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nishi\\Documents\\project\\Validations\\ProductManagement.Validations.csproj",
+        "projectUniqueName": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\Validations\\ProductManagement.Validations.csproj",
         "projectName": "ProductManagement.Validations",
-        "projectPath": "C:\\Users\\nishi\\Documents\\project\\Validations\\ProductManagement.Validations.csproj",
+        "projectPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\Validations\\ProductManagement.Validations.csproj",
         "packagesPath": "C:\\Users\\nishi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nishi\\Documents\\project\\Validations\\obj\\",
+        "outputPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement\\Validations\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

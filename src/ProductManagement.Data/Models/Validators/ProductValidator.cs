@@ -12,7 +12,7 @@ public class ProductValidator : IValidateProduct
             .IsNotNull(product, nameof(product)).Check()
             .IsNotEmpty(product.Name, nameof(product.Name))
             .Min(product.Price, nameof(product.Price), 1)
-            .Min(product.StockQuantity, nameof(product.StockQuantity),1)
+            .Min(product.StockQuantity, nameof(product.StockQuantity), 1)
             .Check();
     }
 }

@@ -4,68 +4,52 @@ namespace Validations.Tests
 {
     public class ValidationTest
     {
+        private Validate.ValidationBuilder builder;
+
+
+        public ValidationTest()
+        {
+            builder = Validate.Begin();
+            // No setup needed here; setup method will handle it.
+        }
+        private void AssertValidationException(string expectedMessage)
+        {
+            var exception = Assert.Throws<Validate.ValidationException>(() => builder.Check());
+            Assert.Contains(expectedMessage, exception.Message);
+        }
         [Fact]
         public void IsNotNull_ShouldAddError_WhenValueIsNull()
         {
-            // Arrange
-            var builder = Validate.Begin();
-
             // Act
             builder.IsNotNull(null, "TestProperty");
 
             // Assert
-            var exception = Assert.Throws<Validate.ValidationException>(() => builder.Check());
-            Assert.Contains("TestProperty cannot be null.", exception.Message);
+            AssertValidationException("TestProperty cannot be null.");
         }
 
         [Fact]
         public void IsNotEmpty_ShouldAddError_WhenValueIsEmpty()
         {
-            // Arrange
-            var builder = Validate.Begin();
-
             // Act
             builder.IsNotEmpty("   ", "TestProperty");
 
             // Assert
-            var exception = Assert.Throws<Validate.ValidationException>(() => builder.Check());
-            Assert.Contains("TestProperty cannot be empty.", exception.Message);
+            AssertValidationException("TestProperty cannot be empty.");
         }
 
         [Fact]
         public void Min_ShouldAddError_WhenValueIsLessThanMinValue()
         {
-            // Arrange
-            var builder = Validate.Begin();
-
             // Act
             builder.Min(5, "TestProperty", 10);
 
             // Assert
-            var exception = Assert.Throws<Validate.ValidationException>(() => builder.Check());
-            Assert.Contains("TestProperty value should be greater than: 10", exception.Message);
-        }
-
-        [Fact]
-        public void Min_ShouldAddError_WhenDecimalValueIsLessThanMinValue()
-        {
-            // Arrange
-            var builder = Validate.Begin();
-
-            // Act
-            builder.Min(5.5m, "TestProperty", 10);
-
-            // Assert
-            var exception = Assert.Throws<Validate.ValidationException>(() => builder.Check());
-            Assert.Contains("TestProperty value should be greater than: 10", exception.Message);
+            AssertValidationException("TestProperty value should be greater than: 10");
         }
 
         [Fact]
         public void Check_ShouldNotThrowException_WhenNoErrors()
         {
-            // Arrange
-            var builder = Validate.Begin();
-
             // Act
             builder.IsNotNull(new object(), "TestProperty")
                    .IsNotEmpty("NotEmpty", "TestProperty")

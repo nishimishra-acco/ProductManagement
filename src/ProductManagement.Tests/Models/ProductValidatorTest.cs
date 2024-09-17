@@ -1,5 +1,5 @@
-﻿using ProductManagement.Data.DTO;
-using ProductManagement.Services.Models.Validators;
+﻿using ProductManagement.Services.Models.Validators;
+using ProductManagement.Tests;
 using static ProductManagement.Validations.Validate;
 
 namespace ProductManagement.Services.Tests
@@ -16,14 +16,7 @@ namespace ProductManagement.Services.Tests
         [Fact]
         public void Check_ShouldNotThrowException_WhenProductIsValid()
         {
-            // Arrange
-            var product = new ProductDto
-            {
-                Name = "Valid Product",
-                Price = 10.0m,
-                StockQuantity = 5
-            };
-
+            var product = Product.ProductDtoList[2];
             // Act & Assert
             var exception = Record.Exception(() => _validator.Check(product));
             Assert.Null(exception);
@@ -32,25 +25,15 @@ namespace ProductManagement.Services.Tests
         [Fact]
         public void Check_ShouldThrowException_WhenProductIsNull()
         {
-            // Arrange
-            ProductDto product = null;
-
             // Act & Assert
-            var exception = Assert.Throws<ValidationException>(() => _validator.Check(product));
+            var exception = Assert.Throws<ValidationException>(() => _validator.Check(null));
             Assert.Contains("product cannot be null.", exception.Message);
         }
 
         [Fact]
         public void Check_ShouldThrowException_WhenNameIsEmpty()
         {
-            // Arrange
-            var product = new ProductDto
-            {
-                Name = string.Empty,
-                Price = 10.0m,
-                StockQuantity = 5
-            };
-
+            var product = Product.ProductDtoList[3];
             // Act & Assert
             var exception = Assert.Throws<ValidationException>(() => _validator.Check(product));
             Assert.Contains("Name cannot be empty.", exception.Message);
@@ -59,14 +42,7 @@ namespace ProductManagement.Services.Tests
         [Fact]
         public void Check_ShouldThrowException_WhenPriceIsBelowMinimum()
         {
-            // Arrange
-            var product = new ProductDto
-            {
-                Name = "Valid Product",
-                Price = 0.5m, // Below minimum price of 1
-                StockQuantity = 5
-            };
-
+            var product = Product.ProductDtoList[4];
             // Act & Assert
             var exception = Assert.Throws<ValidationException>(() => _validator.Check(product));
             Assert.Contains("Price value should be greater than: 1", exception.Message);
@@ -75,14 +51,7 @@ namespace ProductManagement.Services.Tests
         [Fact]
         public void Check_ShouldThrowException_WhenStockQuantityIsBelowMinimum()
         {
-            // Arrange
-            var product = new ProductDto
-            {
-                Name = "Valid Product",
-                Price = 10.0m,
-                StockQuantity = 0 // Below minimum stock quantity of 1
-            };
-
+            var product = Product.ProductDtoList[5];
             // Act & Assert
             var exception = Assert.Throws<ValidationException>(() => _validator.Check(product));
             Assert.Contains("StockQuantity value should be greater than: 1", exception.Message);

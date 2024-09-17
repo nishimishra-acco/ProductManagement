@@ -13,7 +13,6 @@ namespace ProductManagement.Tests
         private readonly Mock<IProductRepository> _mockProductRepository;
         private readonly Mock<IValidateProduct> _mockValidateProduct;
         private readonly ProductService _productService;
-        private readonly Product product;
         private readonly List<ProductDto> record;
 
         public ProductServiceTest()
@@ -21,8 +20,7 @@ namespace ProductManagement.Tests
             _mockProductRepository = new Mock<IProductRepository>();
             _mockValidateProduct = new Mock<IValidateProduct>();
             _productService = new ProductService(_mockProductRepository.Object, _mockValidateProduct.Object);
-            product = new Product();
-            record = product.ProductDto();
+            record = Product.ProductDtoList;
         }
 
         [Fact]
@@ -30,27 +28,27 @@ namespace ProductManagement.Tests
         {
             // Arrange
 
-            _mockProductRepository.Setup(repo => repo.GetAll()).ReturnsAsync(product.ProductRecordList());
+            _mockProductRepository.Setup(repo => repo.GetAll()).ReturnsAsync(Product.ProductRecordList);
 
             // Act
             var result = await _productService.GetAllProducts();
 
             //Assert
             Assert.NotEmpty(result);
-            Assert.Equal(2, result.Count());
+            Assert.Equal(4, result.Count());
         }
 
         [Fact]
         public async Task GetProductById_ShouldReturnProduct()
         {
             // Arrange
-            _mockProductRepository.Setup(repo => repo.GetById(product.productId)).ReturnsAsync(product.ProductRecordList()[0]);
+            _mockProductRepository.Setup(repo => repo.GetById(Product.productId)).ReturnsAsync(Product.ProductRecordList[1]);
 
             // Act
-            var result = await _productService.GetProductById(product.productId);
+            var result = await _productService.GetProductById(Product.productId);
 
             // Assert
-            Assert.Equal("Laptop", result.Name);
+            Assert.Equal("Mouse", result.Name);
         }
         //[Fact]
         //public async Task UpdateProduct_ShouldCallRepositoryUpdate()
@@ -92,7 +90,7 @@ namespace ProductManagement.Tests
         {
             // Arrange
 
-            var expectedProductRecord = product.ProductRecordList().First();
+            var expectedProductRecord = Product.ProductRecordList.First();
 
             var productdto = ProductMapper.ToProductDTO(expectedProductRecord);
 

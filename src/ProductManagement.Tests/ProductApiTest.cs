@@ -11,7 +11,6 @@ namespace ProductManagement.API.Tests
     {
         private readonly Mock<IProductService> _mockProductService;
         private readonly ProductController _controller;
-        private readonly Product product;
         private readonly List<ProductDto> record;
 
         public ProductApiTest()
@@ -19,8 +18,7 @@ namespace ProductManagement.API.Tests
             // Initialize mocks
             _mockProductService = new Mock<IProductService>();
             _controller = new ProductController(_mockProductService.Object);
-            product = new Product();
-            record = product.ProductDto();
+            record = Product.ProductDtoList;
         }
 
         [Fact]
@@ -42,15 +40,15 @@ namespace ProductManagement.API.Tests
         public async Task GetProduct_ShouldReturnOkResult_WithProduct()
         {
             // Arrange
-            _mockProductService.Setup(service => service.GetProductById(product.productId)).ReturnsAsync(record[1]);
+            _mockProductService.Setup(service => service.GetProductById(Product.productId)).ReturnsAsync(record[1]);
 
             // Act
-            var result = await _controller.GetProduct(product.productId);
+            var result = await _controller.GetProduct(Product.productId);
 
             // Assert
             var okResult = Assert.IsType<OkObjectResult>(result);
             var returnedProduct = Assert.IsType<ProductDto>(okResult.Value);
-            Assert.Equal(product.productId, returnedProduct.Id);
+            Assert.Equal(Product.productId, returnedProduct.Id);
             Assert.Equal("Mouse", returnedProduct.Name);
         }        [Fact]
         public async Task UpdateProduct_ShouldReturnOkResult()
