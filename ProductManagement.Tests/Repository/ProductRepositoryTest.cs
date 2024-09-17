@@ -1,5 +1,4 @@
-﻿using ProductManagement.Data.Domain;
-using ProductManagement.Data.Repositories;
+﻿using ProductManagement.Data.Repositories;
 using ProductManagement.Tests.Common;
 
 namespace ProductManagement.Tests.Repository
