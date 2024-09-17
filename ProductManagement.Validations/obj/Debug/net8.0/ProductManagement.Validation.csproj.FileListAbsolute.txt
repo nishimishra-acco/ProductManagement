@@ -1,0 +1,12 @@
+C:\Users\nishi\Documents\Nutrien-Project\ProductManagement\ProductManagement.Validations\bin\Debug\net8.0\ProductManagement.Validation.deps.json
+C:\Users\nishi\Documents\Nutrien-Project\ProductManagement\ProductManagement.Validations\bin\Debug\net8.0\ProductManagement.Validation.dll
+C:\Users\nishi\Documents\Nutrien-Project\ProductManagement\ProductManagement.Validations\bin\Debug\net8.0\ProductManagement.Validation.pdb
+C:\Users\nishi\Documents\Nutrien-Project\ProductManagement\ProductManagement.Validations\obj\Debug\net8.0\ProductManagement.Validation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nishi\Documents\Nutrien-Project\ProductManagement\ProductManagement.Validations\obj\Debug\net8.0\ProductManagement.Validation.AssemblyInfoInputs.cache
+C:\Users\nishi\Documents\Nutrien-Project\ProductManagement\ProductManagement.Validations\obj\Debug\net8.0\ProductManagement.Validation.AssemblyInfo.cs
+C:\Users\nishi\Documents\Nutrien-Project\ProductManagement\ProductManagement.Validations\obj\Debug\net8.0\ProductManagement.Validation.csproj.CoreCompileInputs.cache
+C:\Users\nishi\Documents\Nutrien-Project\ProductManagement\ProductManagement.Validations\obj\Debug\net8.0\ProductManagement.Validation.sourcelink.json
+C:\Users\nishi\Documents\Nutrien-Project\ProductManagement\ProductManagement.Validations\obj\Debug\net8.0\ProductManagement.Validation.dll
+C:\Users\nishi\Documents\Nutrien-Project\ProductManagement\ProductManagement.Validations\obj\Debug\net8.0\refint\ProductManagement.Validation.dll
+C:\Users\nishi\Documents\Nutrien-Project\ProductManagement\ProductManagement.Validations\obj\Debug\net8.0\ProductManagement.Validation.pdb
+C:\Users\nishi\Documents\Nutrien-Project\ProductManagement\ProductManagement.Validations\obj\Debug\net8.0\ref\ProductManagement.Validation.dll
