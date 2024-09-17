@@ -20,10 +20,7 @@ namespace ProductManagement.Data.Repositories
             {
                 return Task.FromResult(product);
             }
-            else
-            {
-                throw new NotFoundException("Product is not available.");
-            }
+            throw new NotFoundException("Product is not available.");
         }
 
         public Task<ProductRecord> Create(ProductRecord productRecord)
@@ -32,10 +29,7 @@ namespace ProductManagement.Data.Repositories
             {
                 return Task.FromResult(productRecord);
             }
-            else
-            {
-                throw new InvalidOperationException("Product already exists.");
-            }
+            throw new InvalidOperationException("Product already exists.");
         }
 
         public Task Update(ProductRecord productRecord)
@@ -45,10 +39,8 @@ namespace ProductManagement.Data.Repositories
                 products[productRecord.Id] = productRecord;
                 return Task.CompletedTask;
             }
-            else
-            {
-                throw new NotFoundException("Product is not available.");
-            }
+            throw new NotFoundException("Product is not available.");
+            
         }
     }
 }
