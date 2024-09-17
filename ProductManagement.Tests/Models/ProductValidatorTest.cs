@@ -1,5 +1,5 @@
 ﻿using ProductManagement.Services.Models.Validators;
-using ProductManagement.Tests;
+using ProductManagement.Tests.Common;
 using static ProductManagement.Validations.Validate;
 
 namespace ProductManagement.Services.Tests

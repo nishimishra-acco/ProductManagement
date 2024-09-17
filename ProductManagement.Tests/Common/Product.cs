@@ -1,8 +1,7 @@
 ﻿using ProductManagement.Data.Domain;
 using ProductManagement.Data.DTO;
 
-
-namespace ProductManagement.Tests
+namespace ProductManagement.Tests.Common
 {
     public static class Product
     {

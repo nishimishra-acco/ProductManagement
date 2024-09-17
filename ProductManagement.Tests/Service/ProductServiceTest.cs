@@ -5,8 +5,9 @@ using ProductManagement.Data.Mappers;
 using ProductManagement.Data.Models.Validators;
 using ProductManagement.Data.Repositories;
 using ProductManagement.Services.Services;
+using ProductManagement.Tests.Common;
 
-namespace ProductManagement.Tests
+namespace ProductManagement.Tests.Service
 {
     public class ProductServiceTest : IDisposable
     {
@@ -113,7 +114,8 @@ namespace ProductManagement.Tests
             _mockProductRepository.Verify(repo => repo.Create(It.Is<ProductRecord>(pr => pr.Name == productdto.Name && pr.Price == productdto.Price)), Times.Once);
         }
 
-        public void Dispose() {
+        public void Dispose()
+        {
             _mockProductRepository.VerifyAll();
         }
     }

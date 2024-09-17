@@ -1,7 +1,8 @@
 ﻿using ProductManagement.Data.Domain;
 using ProductManagement.Data.Repositories;
+using ProductManagement.Tests.Common;
 
-namespace ProductManagement.Tests
+namespace ProductManagement.Tests.Repository
 {
     public class ProductRepositoryTest
     {

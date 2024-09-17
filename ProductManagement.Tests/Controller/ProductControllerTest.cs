@@ -3,17 +3,17 @@ using ProductManagement.Data.DTO;
 using ProductManagement.Services.Services;
 using ProductManagement.API.Controllers;
 using Microsoft.AspNetCore.Mvc;
-using ProductManagement.Tests;
+using ProductManagement.Tests.Common;
 
-namespace ProductManagement.API.Tests
+namespace ProductManagement.Tests.Controller
 {
-    public class ProductApiTest : IDisposable
+    public class ProductControllerTest : IDisposable
     {
         private readonly Mock<IProductService> _mockProductService;
         private readonly ProductController _controller;
         private readonly List<ProductDto> record;
 
-        public ProductApiTest()
+        public ProductControllerTest()
         {
             // Initialize mocks
             _mockProductService = new Mock<IProductService>();
@@ -50,7 +50,8 @@ namespace ProductManagement.API.Tests
             var returnedProduct = Assert.IsType<ProductDto>(okResult.Value);
             Assert.Equal(Product.productId, returnedProduct.Id);
             Assert.Equal("Mouse", returnedProduct.Name);
-        }        [Fact]
+        }
+        [Fact]
         public async Task UpdateProduct_ShouldReturnOkResult()
         {
             // Arrange

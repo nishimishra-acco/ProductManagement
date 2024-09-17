@@ -10,7 +10,6 @@ public class ProductService : IProductService
 {
     private readonly IProductRepository productRepository;
     private readonly IValidateProduct validateProduct;
-    private readonly IValidateProduct productMapper;
 
     public ProductService(IProductRepository productRepository, IValidateProduct validateProduct)
     {

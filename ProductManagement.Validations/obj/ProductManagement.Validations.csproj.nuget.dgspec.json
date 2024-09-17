@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement.Validations\\ProductManagement.Validations.csproj": {}
+    "C:\\Users\\nishi\\Documents\\Nutrien-Project\\1\\ProductManagement\\ProductManagement.Validations\\ProductManagement.Validations.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement.Validations\\ProductManagement.Validations.csproj": {
+    "C:\\Users\\nishi\\Documents\\Nutrien-Project\\1\\ProductManagement\\ProductManagement.Validations\\ProductManagement.Validations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement.Validations\\ProductManagement.Validations.csproj",
+        "projectUniqueName": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\1\\ProductManagement\\ProductManagement.Validations\\ProductManagement.Validations.csproj",
         "projectName": "ProductManagement.Validations",
-        "projectPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement.Validations\\ProductManagement.Validations.csproj",
+        "projectPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\1\\ProductManagement\\ProductManagement.Validations\\ProductManagement.Validations.csproj",
         "packagesPath": "C:\\Users\\nishi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\ProductManagement\\ProductManagement.Validations\\obj\\",
+        "outputPath": "C:\\Users\\nishi\\Documents\\Nutrien-Project\\1\\ProductManagement\\ProductManagement.Validations\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

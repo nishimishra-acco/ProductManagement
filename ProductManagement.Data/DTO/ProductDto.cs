@@ -1,5 +1,4 @@
 namespace ProductManagement.Data.DTO;
-
 public class ProductDto : EntityDto
 {
     public string Name { get; set; }

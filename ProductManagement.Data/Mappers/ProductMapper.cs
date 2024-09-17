@@ -2,7 +2,6 @@ using ProductManagement.Data.Domain;
 using ProductManagement.Data.DTO;
 
 namespace ProductManagement.Data.Mappers;
-
 public static class ProductMapper
 {
     public static ProductDto ToProductDTO(ProductRecord productRecord)
