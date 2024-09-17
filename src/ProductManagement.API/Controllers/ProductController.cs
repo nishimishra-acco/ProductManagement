@@ -36,6 +36,7 @@ namespace ProductManagement.API.Controllers
             return CreatedAtAction(nameof(GetProduct), new { Id = product.Id }, product);
         }
 
+        [HttpPut]
         public async Task<IActionResult> UpdateProduct([FromBody] ProductDto productDto)
         {
             await productService.UpdateProduct(productDto);

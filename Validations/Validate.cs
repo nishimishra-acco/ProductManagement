@@ -32,7 +32,7 @@
             {
                 if (value < minValue)
                 {
-                    _errors.Add($"{propertyName} value should be greater than: {minValue}");
+                    _errors.Add($"{propertyName} value should be greater than equal to: {minValue}");
                 }
                 return this;
             }
@@ -41,7 +41,7 @@
             {
                 if (value < minValue)
                 {
-                    _errors.Add($"{propertyName} value should be greater than: {minValue}");
+                    _errors.Add($"{propertyName} value should be greater than equal to: {minValue}");
                 }
                 return this;
             }
