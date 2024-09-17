@@ -5,12 +5,9 @@ namespace Validations.Tests
     public class ValidationTest
     {
         private Validate.ValidationBuilder builder;
-
-
         public ValidationTest()
         {
             builder = Validate.Begin();
-            // No setup needed here; setup method will handle it.
         }
         private void AssertValidationException(string expectedMessage)
         {

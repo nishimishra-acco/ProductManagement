@@ -51,41 +51,7 @@ namespace ProductManagement.Tests.Service
             // Assert
             Assert.Equal("Mouse", result.Name);
         }
-        //[Fact]
-        //public async Task UpdateProduct_ShouldCallRepositoryUpdate()
-        //{
-        //    // Arrange
 
-        //    _mockValidateProduct.Setup(validator => validator.Check(record[0]));
-        //    ProductRecord productRecord = product.ProductRecordList()[0];
-        //    _mockProductRepository.Setup(repo => repo.Update(productRecord)).Returns(Task.CompletedTask);
-
-        //    // Act
-        //    record[0].Name = "Test12";
-        //    await _productService.UpdateProduct(record[0]);
-
-        //    // Assert
-        //    _mockValidateProduct.Verify(validator => validator.Check(record[0]), Times.Once);
-
-
-        //    var expectedProductRecord = product.ProductRecordList().First();
-
-        //    var productdto = ProductMapper.ToProductDTO(expectedProductRecord);
-
-        //    _mockProductRepository.Setup(repo => repo.Update(It.Is<ProductRecord>(pr =>
-
-        //    pr.Name == expectedProductRecord.Name &&
-
-        //    pr.Price == expectedProductRecord.Price)))
-
-        //    .Returns(Task.CompletedTask);
-
-        //    // Act
-
-        //    await _productService.UpdateProduct(productdto);
-
-        //    // Assert
-        //}
         [Fact]
         public async Task CreateProduct_ValidProductDto_CreatesProduct()
         {

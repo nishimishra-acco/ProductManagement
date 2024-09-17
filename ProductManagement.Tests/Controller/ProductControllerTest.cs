@@ -4,6 +4,7 @@ using ProductManagement.Services.Services;
 using ProductManagement.API.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using ProductManagement.Tests.Common;
+using ProductManagement.Data.Domain;
 
 namespace ProductManagement.Tests.Controller
 {
@@ -51,6 +52,7 @@ namespace ProductManagement.Tests.Controller
             Assert.Equal(Product.productId, returnedProduct.Id);
             Assert.Equal("Mouse", returnedProduct.Name);
         }
+
         [Fact]
         public async Task UpdateProduct_ShouldReturnOkResult()
         {
@@ -62,6 +64,33 @@ namespace ProductManagement.Tests.Controller
 
             // Assert
             Assert.IsType<OkResult>(result);
+        }
+
+        [Fact]
+        public async Task AddProduct_ValidProductDto_ReturnsCreatedAtAction()
+        {
+            // Arrange
+            var productDto = Product.ProductDtoList[0];
+
+            var product = new ProductRecord
+            {
+                Id = Guid.NewGuid(),
+                Name = productDto.Name,
+                Price = productDto.Price,
+                StockQuantity = productDto.StockQuantity
+            };
+
+            // Setup the mock to return the created product
+            _mockProductService.Setup(service => service.CreateProduct(productDto))
+                .ReturnsAsync(product);
+
+            // Act
+            var result = await _controller.AddProduct(productDto);
+
+            // Assert
+            var actionResult = Assert.IsType<CreatedAtActionResult>(result);
+            Assert.Equal("GetProduct", actionResult.ActionName);
+            Assert.Equal(product.Id, actionResult.RouteValues["id"]);
         }
         public void Dispose()
         {
