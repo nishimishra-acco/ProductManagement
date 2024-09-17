@@ -10,7 +10,7 @@ namespace ProductManagement.Data.Repositories
 
         public Task<IEnumerable<ProductRecord>> GetAll()
         {
-            var allProducts = products.Values.ToArray();
+            var allProducts = products.Values.ToList();
             return Task.FromResult((IEnumerable<ProductRecord>)allProducts);
         }
 
