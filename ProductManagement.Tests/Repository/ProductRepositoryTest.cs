@@ -1,4 +1,5 @@
-﻿using ProductManagement.Data.Repositories;
+﻿using ProductManagement.Data.Exceptions;
+using ProductManagement.Data.Repositories;
 using ProductManagement.Tests.Common;
 
 namespace ProductManagement.Tests.Repository
@@ -50,7 +51,7 @@ namespace ProductManagement.Tests.Repository
         public async Task GetById_ShouldThrowException_WhenProductDoesNotExist()
         {
             // Act & Assert
-            await Assert.ThrowsAsync<InvalidOperationException>(() => _mockRepository.GetById(Guid.NewGuid()));
+            await Assert.ThrowsAsync<NotFoundException>(() => _mockRepository.GetById(Guid.NewGuid()));
         }
 
         [Fact]
@@ -95,7 +96,7 @@ namespace ProductManagement.Tests.Repository
             var product = Product.ProductRecordList[2];
 
             // Act & Assert
-            await Assert.ThrowsAsync<InvalidOperationException>(() => _mockRepository.Update(product));
+            await Assert.ThrowsAsync<NotFoundException>(() => _mockRepository.Update(product));
         }
     }
 }

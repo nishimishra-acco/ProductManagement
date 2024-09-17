@@ -1,4 +1,5 @@
 using ProductManagement.Data.Domain;
+using ProductManagement.Data.Exceptions;
 
 namespace ProductManagement.Data.Repositories;
 
@@ -16,7 +17,7 @@ public class ProductRepository : IProductRepository
         var product = products.FirstOrDefault(product => product.Id == id);
         if(product == null)
         {
-           throw new InvalidOperationException("Product is not available.");
+           throw new NotFoundException("Product is not available.");
         }
         return await Task.FromResult(product);
     }
@@ -35,7 +36,7 @@ public class ProductRepository : IProductRepository
             index = products.FindIndex(x => x.Id == productRecord.Id);
             if (index == -1)
             {
-                throw new InvalidOperationException("Product is not available.");
+                throw new NotFoundException("Product is not available.");
             }
             products[index] = productRecord;
         });
